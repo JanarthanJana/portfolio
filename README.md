@@ -29,7 +29,7 @@ A modern and responsive portfolio website to showcase my projects, skills, and e
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/huzaifahmedz/portfolio-website.git
+   git clone https://github.com/JanarthanJana/portfolio.git
    ```
 
 2. Navigate into the project directory:

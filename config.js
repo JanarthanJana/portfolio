@@ -150,7 +150,7 @@ export const config = {
         {
             icon: <FaMapPin className="w-5 h-5" />,
             label: "Location",
-            value: "India",
+            value: "SriLanka",
             link: null
         }
     ]

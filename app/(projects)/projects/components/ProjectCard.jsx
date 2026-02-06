@@ -1,5 +1,6 @@
 "use client"
 import React from 'react';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import { FaExternalLinkAlt } from 'react-icons/fa';
@@ -11,11 +12,12 @@ export const ProjectCard = ({ project, index }) => (
         className="group flex flex-col sm:flex-row items-stretch gap-6 bg-secondary/5 hover:bg-secondary/10 p-4 rounded-xl transition-colors duration-300"
     >
         <div className="sm:w-1/3">
-            <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
-                <img
+                <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
+                <Image
                     src={project.image}
                     alt={project.title}
-                    loading="lazy"
+                    fill
+                    unoptimized
                     className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-300" />
